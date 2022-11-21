@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author camid
+ *
+ */
+module ProjectEuler {
+}
