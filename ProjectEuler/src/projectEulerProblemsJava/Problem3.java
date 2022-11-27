@@ -17,7 +17,7 @@ public class Problem3 {
 				
 			int y =0;
 			//for (y=0, y < factors.size(), y++) {
-			
+				//if (factors[y] % 
 			
 			}
 					
