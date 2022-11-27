@@ -16,8 +16,12 @@ public class Problem3 {
 				factors.add(x);
 				
 			int y =0;
-			//for (y=0, y < factors.size(), y++) {
-				//if (factors[y] % 
+			long s =1;
+			for (y=0; y <= (factors.size()-1); y++) {
+				while ( s <= number/2 ) {
+					if (factors.get(y) % s == 0)
+						factors.remove(y);
+					s ++;
 			
 			}
 					
@@ -29,6 +33,6 @@ public class Problem3 {
 		
 		
 		
-	//}
-
+	}
+}
 
