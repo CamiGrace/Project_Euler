@@ -15,6 +15,11 @@ public class Problem3 {
 			if (number % x == 0) {
 				factors.add(x);
 				
+			int y =0;
+			//for (y=0, y < factors.size(), y++) {
+			
+			
+			}
 					
 					System.out.println(factors);
 				}
@@ -24,6 +29,6 @@ public class Problem3 {
 		
 		
 		
-	}
+	//}
 
 
