@@ -1,6 +1,6 @@
 package projectEulerProblemsJava;
 
-
+import java.util.ArrayList;
 
 public class Problem3 {
 
@@ -9,12 +9,14 @@ public class Problem3 {
 		//What is the largest prime factor of the number 600851475143 ?
 		
 		long number = 600851475143L;
+		ArrayList <Long> factors = new ArrayList<Long>();
 		
 		for (long x =1; x<= number/2; x++) {
 			if (number % x == 0) {
-				if ((x % 2 !=0) && (x % 3 != 0)&& (x % 5 !=0) && (x % 7 !=0)) {
+				factors.add(x);
+				
 					
-					System.out.println(x);
+					System.out.println(factors);
 				}
 				
 			}
@@ -24,4 +26,4 @@ public class Problem3 {
 		
 	}
 
-}
+
