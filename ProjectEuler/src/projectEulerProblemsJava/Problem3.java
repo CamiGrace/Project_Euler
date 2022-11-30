@@ -10,6 +10,7 @@ public class Problem3 {
 		
 		long number = 600851475143L;
 		ArrayList <Long> factors = new ArrayList<Long>();
+		ArrayList <Long> factorsModified = new ArrayList<Long>();
 		
 		for (long x =1; x<= number/2; x++) {
 			if (number % x == 0) {
@@ -17,15 +18,15 @@ public class Problem3 {
 				
 			int y =0;
 			long s =1;
-			for (y=0; y <= (factors.size()-1); y++) {
+			for (y=0; y < (factors.size()-1); y++) {
 				while ( s <= number/2 ) {
 					if (factors.get(y) % s == 0)
-						factors.remove(y);
+						factorsModified.add(factors.get(y));
 					s ++;
 			
 			}
 					
-					System.out.println(factors);
+					System.out.println(factorsModified);
 				}
 				
 			}
